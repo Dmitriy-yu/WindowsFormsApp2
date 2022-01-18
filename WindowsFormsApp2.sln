@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31624.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Secundomer", "WindowsFormsApp2\Secundomer.csproj", "{872576B8-42CC-4C68-852B-73466FE80AA7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{872576B8-42CC-4C68-852B-73466FE80AA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{872576B8-42CC-4C68-852B-73466FE80AA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{872576B8-42CC-4C68-852B-73466FE80AA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{872576B8-42CC-4C68-852B-73466FE80AA7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4F56D9D4-DDF2-473C-96D0-F163F7156BDF}
+	EndGlobalSection
+EndGlobal
