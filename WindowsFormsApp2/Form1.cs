@@ -33,16 +33,16 @@ namespace WindowsFormsApp2
             string time = " ";
             if (h < 10)
             {
-                time += "0";
+                time += "0"+h;
             }
             else
             {
-                time += h;
+                time += h+time;
             }
             time += ":";
             if (m < 10)
             {
-                time += "0"+m;
+                time += "0" + m;
             }
             else
             {
@@ -51,13 +51,15 @@ namespace WindowsFormsApp2
             time += ":";
             if (s < 10)
             {
-                time += "0"+s;
+                time += "0" + s;
             }
             else
             {
                 time += s;
             }
             label2.Text = time;
+            //label2.Text = (DateTime.Now.Hour +":")+(DateTime.Now.Minute  + ":")+(DateTime.Now.Second);
+            //Более короткая запись                                                                                                                                                              Вариант более сокращенно
             string data = " ";
             int day = DateTime.Now.Day;
             int mans = DateTime.Now.Month;
