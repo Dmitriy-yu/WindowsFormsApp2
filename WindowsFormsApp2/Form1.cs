@@ -12,7 +12,10 @@ namespace WindowsFormsApp2
 {
     public partial class Form1 : Form
     {
+     
+        DateTime time = new DateTime();
         Timer timer = new Timer();
+       
         public Form1()
         {
             InitializeComponent();
@@ -93,6 +96,48 @@ namespace WindowsFormsApp2
             data += "г.";
             label1.Text = data;
         }
-        
-    }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            timer2.Enabled = true;
+  
+        }
+  
+        private void timer2_Tick(object sender, EventArgs e)
+        {
+            time = time.AddMilliseconds(5000);
+            label3.Text = time.ToString("HH:mm:ss");
+            progressBar1.Minimum = 0;
+            progressBar1.Maximum = 1000;
+            if (progressBar1.Minimum<progressBar1.Maximum)
+            {
+                progressBar1.Value = progressBar1.Value +10;
+            }
+            if (progressBar1.Value==1000)
+            {
+                progressBar1.Value = 0;
+                timer1.Stop();
+            }
+            
+        }
+    
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (timer2.Enabled == true)
+                timer2.Enabled = false;
+            MessageBox.Show("Сбросить","Вышло время",MessageBoxButtons.OKCancel);
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            timer2.Enabled = false;
+            label3.Text = "00:00:00";
+            progressBar1.Value = 0;
+          
+
+        }
+
+      
+    }   
+   
 }
